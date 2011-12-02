@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Curso de jQuery - Eder Oliveira</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    jQuery("#btn").click(function(){
+		//Pegar a URL para exibir no box abaixo 
+        var url = jQuery("#link").attr("href");
+        jQuery(".box").css("display","block").text("Url: " + url);
+    });
+
+});
+
+</script>
+<style type="text/css">
+.box{  padding: 0.5em 0.5em 0.5em 0.5em;border: solid 1px #036; color: #fff; background-color: #036;margin-top: 0.5em;display: none; }
+</style>
+</head>
+<body>
+
+    <a href="www.twitter.com/eder_frances" id="link">Twitter</a><br /><br />
+
+    <input type="button" id="btn" value="Ver valor" />
+
+    <div class="box"></div>
+
+</body>
+</html>

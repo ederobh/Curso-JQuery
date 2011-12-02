@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Curso de jQuery - Eder F Oliveira</title>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+
+    jQuery("#alterar").click(function(){
+
+      alert("Atributo Titulo: " + jQuery("#link").attr("title") );
+
+      //remover o atributo 		
+	  jQuery("#link").removeAttr("title");
+	  
+      alert("Atributo Titulo: " + jQuery("#link").attr("title") );
+
+    });
+
+});
+</script>
+
+</head>
+<body>
+<a href="#" id="link" title="Professor">Eder</a>
+<br /><br />
+<input type="button" id="alterar" value="Alterar" />
+</body>
+</html>

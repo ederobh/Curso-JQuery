@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Curso de jQuery - Eder</title>
+
+<script type="text/javascript"
+src="http://code.jquery.com/jquery-latest.js">
+</script>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+
+    jQuery("div").click(function(){
+
+     if ( jQuery(this).hasClass("curso2") == true )
+	 {
+        alert("Você acessou a class curso2");
+     }
+
+    });
+
+});
+</script>
+
+<style type="text/css">
+.box{background-color: #FFFF66; height:50px; width:50px; padding: 0.5em;margin-bottom: 1em;}
+</style>
+
+</head>
+<body>
+
+<div class="box curso1" id="slogan">Javascript</div>
+<div class="box curso2" id="slogan">JQuery</div>
+<div class="box curso3" id="slogan">NodeJS</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

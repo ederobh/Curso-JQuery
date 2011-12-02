@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Curso de jQuery - Eder</title>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+
+    alert("Elementos Ocultos: " + jQuery("div:hidden").length + " - Elementos Visiveis: " + jQuery("div:visible").length);
+
+    jQuery("div:hidden").css("display","block");
+
+    alert("Elementos Ocultos: " + jQuery("div:hidden").length + " - Elementos Visiveis: " + jQuery("div:visible").length);
+
+});
+</script>
+
+<style type="text/css">
+.box-on{ width: 150px;height: 150px;background-color: #CCFF66;  margin-bottom: 0.5em; display: block; }
+
+.box-off{ width: 150px;height: 150px;background-color: #FF6600;  margin-bottom: 0.5em; display: none; }
+</style>
+
+</head>
+<body>
+    <div class="box-on"></div>
+    <div class="box-off"></div>
+    <div class="box-on"></div>
+    <div class="box-off"></div>
+</body>
+</html>

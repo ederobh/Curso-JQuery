@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Curso de jQuery - Éder Oliveira</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script type="text/javascript">
+//eq gt lt
+jQuery(document).ready(function() {
+	jQuery("#cursoAvancado *:odd").css('background-color','#ccc');
+});
+
+</script>
+</head>
+<body>
+
+  <select id="cursoBasico">
+      <option value="1">Curso de XHTML</option>
+      <option value="2">Curso de CSS</option>
+      <option value="3">Curso de jQuery</option>
+	  <option value="4">Curso de MySQL</option>
+	  <option value="5">Curso de Javascript</option>
+  </select><br /><br /><br /><br />
+  <ul id="cursoAvancado">
+      <li>Curso de XHTML</li>
+      <li>Curso de jQuery</li>
+      <li>Curso de CSS</li>
+	  <li>Curso de Javascript</li>
+	  <li>Curso de PHP</li>
+	  <li>Curso de MySQL</li>
+  </ul>
+
+</body>
+</html>

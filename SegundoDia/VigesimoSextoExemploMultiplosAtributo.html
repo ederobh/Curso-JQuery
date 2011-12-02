@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Curso de jQuery - Éder Frances Oliveira</title>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script type="text/javascript">
+
+jQuery(document).ready(function() {
+
+    jQuery("#alterar").click(function(){
+
+        jQuery("#link").attr({
+			href: "http://facebook.com/edero25",
+			id: "link_facebook",
+			rel: "nofollow"		
+		});
+
+        alert(
+            "id: " + jQuery("#link_facebook").attr("id") +
+
+            " href: "  + jQuery("#link_facebook").attr("href") +
+
+            " rel: "  + jQuery("#link_facebook").attr("rel")
+        );
+
+    });
+
+});
+
+</script>
+
+</head>
+<body>
+
+<a href="http://www.twitter.com/eder_frances" id="link" rel="index">Eder F Oliveira</a>
+<br /><br />
+
+<input type="button" id="alterar" value="Alterar" />
+
+</body>
+</html>

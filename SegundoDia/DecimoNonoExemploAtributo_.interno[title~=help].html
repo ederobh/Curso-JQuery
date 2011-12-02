@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Curso de jQuery - Éder Frances Oliveia</title>
+<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+//Não esquecer o |
+jQuery(document).ready(function() {	
+	jQuery(".interno[title|='help']").css('color','red');
+});
+
+</script>
+</head>
+<body>
+    <a href="#" title="ajuda help" class="interno">Link 1</a>
+
+    <a href="#" title="help-ajuda help" class="interno">Link 2</a>
+
+    <a href="#" title="ajudahelp" class="interno">Link 3</a>
+
+    <a href="#" title="help ajuda help" class="interno">Link 4</a>
+	
+	<a href="#" title="help" class="interno">Link 5</a>
+</body>
+</html>

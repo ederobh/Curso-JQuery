@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Curso de jQuery - Eder Frances Oliveira</title>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+
+	jQuery("#pergunta").click(function(){
+			jQuery(this).html();
+	});
+
+});
+</script>
+
+</head>
+<body>
+
+<div id="pergunta">
+    <b>Qual curso</b> <em>estamos fazendo?</em>Clique aqui :)
+</div>
+
+<div id="curso" style="display:none">JQuery</div>
+
+</body>
+</html>

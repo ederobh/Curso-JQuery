@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Curso de jQuery - Éder Frances</title>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script type="text/javascript">
+//Pegar os selecionados e os disabled
+jQuery(document).ready(function() {
+	jQuery("#formulario :disabled + span").css('color','red');
+});
+
+</script>
+
+</head>
+<body>
+    <form action="#" method="post" id="formulario">
+        <input type="checkbox" name="ch1" checked="checked"/>
+        <span>Check 1</span><br />
+
+        <input type="checkbox" name="ch2"/>
+        <span>Check 2</span><br />
+
+        <input type="radio" name="radio" checked="checked" />
+        <span>Radio 1</span><br />
+		
+        <input type="radio" name="radio" disabled="disabled"/>
+        <span>Radio 2</span><br />
+    </form>
+</body>
+</html>
